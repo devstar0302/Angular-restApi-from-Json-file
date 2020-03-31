@@ -1,0 +1,30 @@
+<div class="example-container">
+    <form (ngSubmit)="addProduct(f)" #f="ngForm">
+        <mat-form-field appearance="fill">
+            <mat-label>Product Name</mat-label>
+            <input matInput [(ngModel)]="formData.name" name="productName">
+        </mat-form-field>
+        <br>
+        <mat-form-field appearance="fill">
+            <mat-label>Description</mat-label>
+            <input matInput [(ngModel)]="formData.description" name="productDescription">
+        </mat-form-field>
+        <br>
+        <mat-form-field appearance="fill">
+            <mat-label>Price</mat-label>
+            <input matInput [(ngModel)]="formData.price" name="productPrice">
+        </mat-form-field>
+        <br>
+        <mat-form-field appearance="fill">
+            <mat-label>imageURL</mat-label>
+            <input matInput [(ngModel)]="formData.imageUrl" name="productImg">
+        </mat-form-field>
+        <br>
+        <mat-form-field appearance="fill">
+            <mat-label>quantity</mat-label>
+            <input matInput [(ngModel)]="formData.quantity" name="productQuantity">
+        </mat-form-field>
+        <br>
+        <button mat-button>Add product</button>
+    </form>
+</div>

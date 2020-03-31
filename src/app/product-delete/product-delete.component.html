@@ -1,0 +1,10 @@
+<div class="example-container">
+    <form (ngSubmit)="deleteProduct(f)" #f="ngForm">
+        <mat-form-field appearance="fill">
+        <mat-label>Product ID</mat-label>
+        <input matInput [(ngModel)]="id" name="productId">
+        </mat-form-field>
+        <br>
+        <button mat-button>Delete product</button>
+    </form>
+</div>
